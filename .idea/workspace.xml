@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c11c5b08-1ec8-4652-9e55-4d11b7e5ed18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/administrator/components" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/administrator/components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/administrator/components/com_beers/views/beers" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -64,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580721426573</updated>
-      <workItem from="1580721427944" duration="12572000" />
+      <workItem from="1580721427944" duration="15848000" />
     </task>
     <servers />
   </component>
@@ -76,5 +83,13 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="658" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580733634703" />
+    <state x="498" y="257" width="683" height="486" key="find.popup" timestamp="1580810103964">
+      <screen x="0" y="23" width="1680" height="955" />
+    </state>
+    <state x="498" y="257" width="683" height="486" key="find.popup/0.23.1680.955@0.23.1680.955" timestamp="1580810103964" />
+    <state x="505" y="232" width="670" height="676" key="search.everywhere.popup" timestamp="1580808921838">
+      <screen x="0" y="23" width="1680" height="955" />
+    </state>
+    <state x="505" y="232" width="670" height="676" key="search.everywhere.popup/0.23.1680.955@0.23.1680.955" timestamp="1580808921838" />
   </component>
 </project>
