@@ -6,10 +6,12 @@ CREATE TABLE `#__beers` (
 	`tagline` VARCHAR(255) NOT NULL,
 	`description` TEXT(500) NOT NULL,
 	`alcohol_percentage` DECIMAL(2,1) NOT NULL,
-	`rating` INT(11) NULL,
+	`rating` INT(11) NULL
 	PRIMARY KEY (`id`)
 )
 	ENGINE =InnoDB
 	AUTO_INCREMENT =0
 	DEFAULT CHARSET =utf8;
 
+INSERT INTO `#__beers` (`name`, `tagline`, `description`, `alcohol_percentage`, `rating`) VALUES
+('Heineken', 'hein', 'Beer', 7.2, 5);

@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c11c5b08-1ec8-4652-9e55-4d11b7e5ed18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/beers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/beers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/install.mysql.utf8.sql" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/sql/install.mysql.utf8.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/tables/beers.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/tables/beers.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580721426573</updated>
-      <workItem from="1580721427944" duration="15848000" />
+      <workItem from="1580721427944" duration="17851000" />
     </task>
     <servers />
   </component>

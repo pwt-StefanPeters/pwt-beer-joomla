@@ -10,7 +10,7 @@ CREATE TABLE `#__helloworld` (
 	AUTO_INCREMENT =0
 	DEFAULT CHARSET =utf8;
 
-INSERT INTO `#__helloworld` (`greeting`) VALUES
+INSERT INTO `#__beers` (`greeting`) VALUES
 ('Hello World!'),
 ('Good bye World!'),
 ('Good bye Hello World!');
