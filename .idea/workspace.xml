@@ -4,8 +4,6 @@
     <list default="true" id="c11c5b08-1ec8-4652-9e55-4d11b7e5ed18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/beers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/beers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/install.mysql.utf8.sql" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/sql/install.mysql.utf8.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/tables/beers.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/tables/beers.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580721426573</updated>
-      <workItem from="1580721427944" duration="17851000" />
+      <workItem from="1580721427944" duration="18872000" />
     </task>
     <servers />
   </component>
@@ -82,6 +80,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="440" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580816742451">
+      <screen x="0" y="23" width="1680" height="955" />
+    </state>
+    <state x="440" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.955@0.23.1680.955" timestamp="1580816742451" />
     <state x="658" y="455" key="NewPhpFileDialog" timestamp="1580733634703">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
