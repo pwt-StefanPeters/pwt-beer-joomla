@@ -26,4 +26,10 @@ class BeersController extends JControllerLegacy
      * @since 12.2
      */
     protected $default_view = 'beers';
+
+    public function test()
+    {
+        $this->get('Beers');
+        return 'test string uit de controller';
+    }
 }

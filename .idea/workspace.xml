@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c11c5b08-1ec8-4652-9e55-4d11b7e5ed18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/beers.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/beers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/beers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/beers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/install.mysql.utf8.sql" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/sql/install.mysql.utf8.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/updates/mysql/0.0.7.sql" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/sql/updates/mysql/0.0.7.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/tmpl/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/tmpl/default.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/view.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/view.html.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +58,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/administrator/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/administrator/components/com_beers" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/administrator/components/com_beers" />
       <recent name="$PROJECT_DIR$/administrator/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -72,7 +80,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580721426573</updated>
-      <workItem from="1580721427944" duration="18872000" />
+      <workItem from="1580721427944" duration="35640000" />
+      <workItem from="1580893321595" duration="14744000" />
     </task>
     <servers />
   </component>
@@ -88,10 +97,15 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="658" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580733634703" />
-    <state x="498" y="257" width="683" height="486" key="find.popup" timestamp="1580810103964">
-      <screen x="0" y="23" width="1680" height="955" />
+    <state x="2469" y="370" key="SettingsEditor" timestamp="1580830315104">
+      <screen x="1680" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2469" y="370" key="SettingsEditor/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1580830315104" />
+    <state x="3159" y="338" width="1041" height="722" key="find.popup" timestamp="1580904763044">
+      <screen x="1680" y="23" width="2560" height="1417" />
     </state>
     <state x="498" y="257" width="683" height="486" key="find.popup/0.23.1680.955@0.23.1680.955" timestamp="1580810103964" />
+    <state x="3159" y="338" width="1041" height="722" key="find.popup/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1580904763044" />
     <state x="505" y="232" width="670" height="676" key="search.everywhere.popup" timestamp="1580808921838">
       <screen x="0" y="23" width="1680" height="955" />
     </state>

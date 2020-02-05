@@ -10,7 +10,7 @@
 	<copyright>Copyright Info</copyright>
 	<license>License Info</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.0.7</version>
+	<version>0.0.10</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>Component to use beer API to show beer data</description>
 
@@ -60,7 +60,7 @@
 			<!-- view files section	-->
 			<folder>views</folder>
 			<!-- models files section -->
-<!--			<folder>models</folder>-->
+			<folder>models</folder>
 		</files>
 	</administration>
 

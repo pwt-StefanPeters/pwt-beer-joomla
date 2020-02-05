@@ -9,6 +9,9 @@
 
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
+JLoader::register('BeersHelper', JPATH_ADMINISTRATOR . '/components/com_beers/helpers/beers.php');
+
+
 
 /**
  * HTML View class for the Beer Component
@@ -24,12 +27,37 @@ class BeersViewBeers extends JViewLegacy
      *
      * @return  void
      */
-    function display($tpl = null)
+    public function display($tpl = null)
     {
         // Assign data to the view
-        $this->msg = 'Hello Beers';
 
+        // retrieve model
+        $model = $this->getModel('Beers');
+//        $this->beers = $this->get('Beers');
+
+//        $this->controllerBier = $model->insertBeers();
+
+        // Calling helper function
+//        $this->retrieveBeers = BeersHelper::checkBeers();
+
+        // alle biertjes ophalen
+        $this->getBeers = $this->get('Beers');
+//        $this->getBeers = 'biertjes ophalen';
+
+
+        $this->beers = $model->checkBeers();
+
+        $this->createToolbar();
         // Display the view
         parent::display($tpl);
+    }
+
+    protected function createToolbar()
+    {
+        // all toolbar items
+        JToolbarHelper::title('Beers');
+        JToolbarHelper::addNew('Beers.add', 'Biertjes opnieuw ophalen');
+        JToolbarHelper::editList('edit');
+
     }
 }

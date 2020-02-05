@@ -8,13 +8,15 @@
  */
 
 // No direct access to this file
+use Joomla\CMS\Factory;
+
 defined('_JEXEC') or die('Restricted access');
 
 // Get an instance of the controller prefixed by Beers
 $controller = JControllerLegacy::getInstance('Beers');
 
 // Perform the Request task
-$controller->execute(JFactory::getApplication()->input->get('task'));
+$controller->execute(Factory::getApplication()->input->get('task'));
 
 // Redirect if set by the controller
 $controller->redirect();
