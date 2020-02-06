@@ -3,19 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c11c5b08-1ec8-4652-9e55-4d11b7e5ed18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/beers.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/beers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/beers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/beers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/models/beers.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/models/beers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/updates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/updates/mysql/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/tables/beers.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/tables/beer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/tables/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/list.html.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/tmpl/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/tmpl/default.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/view.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/view.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/install.mysql.utf8.sql" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/sql/install.mysql.utf8.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/updates/mysql/0.0.11.sql" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/sql/updates/mysql/0.0.11.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580721426573</updated>
       <workItem from="1580721427944" duration="35640000" />
-      <workItem from="1580893321595" duration="43606000" />
+      <workItem from="1580893321595" duration="44310000" />
     </task>
     <servers />
   </component>
