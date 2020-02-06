@@ -6,10 +6,16 @@
       <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/beers.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/beers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/beers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/beers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/install.mysql.utf8.sql" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/sql/install.mysql.utf8.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/updates/mysql/0.0.7.sql" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/sql/updates/mysql/0.0.7.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/models/beers.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/models/beers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/updates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/updates/mysql/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/tables/beers.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/tables/beer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/tables/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/list.html.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/tmpl/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/tmpl/default.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/view.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/view.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +51,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="1XI6nK9Tq8wbXfSlnGpNUksdrqj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -59,16 +66,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/administrator/components/com_beers" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/administrator/components/com_beers/views" />
+      <recent name="$PROJECT_DIR$/administrator/components/com_beers/views/beers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/administrator/components/com_beers" />
       <recent name="$PROJECT_DIR$/administrator/components" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/administrator/components/com_beers/views/beers" />
-    </key>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -81,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580721426573</updated>
       <workItem from="1580721427944" duration="35640000" />
-      <workItem from="1580893321595" duration="14744000" />
+      <workItem from="1580893321595" duration="43606000" />
     </task>
     <servers />
   </component>
@@ -89,10 +101,19 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580816742451">
-      <screen x="0" y="23" width="1680" height="955" />
+    <state x="2350" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580993424404">
+      <screen x="1680" y="23" width="2560" height="1417" />
     </state>
     <state x="440" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.955@0.23.1680.955" timestamp="1580816742451" />
+    <state x="2350" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1580993424404" />
+    <state x="2698" y="493" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1580996518458">
+      <screen x="1680" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2698" y="493" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1580996518458" />
+    <state x="2712" y="594" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1580981752658">
+      <screen x="1680" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2712" y="594" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1580981752658" />
     <state x="658" y="455" key="NewPhpFileDialog" timestamp="1580733634703">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -101,14 +122,19 @@
       <screen x="1680" y="23" width="2560" height="1417" />
     </state>
     <state x="2469" y="370" key="SettingsEditor/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1580830315104" />
-    <state x="3159" y="338" width="1041" height="722" key="find.popup" timestamp="1580904763044">
+    <state x="3159" y="338" width="1041" height="722" key="find.popup" timestamp="1581000914458">
       <screen x="1680" y="23" width="2560" height="1417" />
     </state>
     <state x="498" y="257" width="683" height="486" key="find.popup/0.23.1680.955@0.23.1680.955" timestamp="1580810103964" />
-    <state x="3159" y="338" width="1041" height="722" key="find.popup/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1580904763044" />
-    <state x="505" y="232" width="670" height="676" key="search.everywhere.popup" timestamp="1580808921838">
-      <screen x="0" y="23" width="1680" height="955" />
+    <state x="3159" y="338" width="1041" height="722" key="find.popup/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1581000914458" />
+    <state x="2722" y="368" key="refactoring.ChangeSignatureDialog" timestamp="1580992329324">
+      <screen x="1680" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2722" y="368" key="refactoring.ChangeSignatureDialog/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1580992329324" />
+    <state x="2450" y="333" width="1021" height="1004" key="search.everywhere.popup" timestamp="1580995142738">
+      <screen x="1680" y="23" width="2560" height="1417" />
     </state>
     <state x="505" y="232" width="670" height="676" key="search.everywhere.popup/0.23.1680.955@0.23.1680.955" timestamp="1580808921838" />
+    <state x="2450" y="333" width="1021" height="1004" key="search.everywhere.popup/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1580995142738" />
   </component>
 </project>

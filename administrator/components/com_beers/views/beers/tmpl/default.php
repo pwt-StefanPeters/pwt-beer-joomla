@@ -8,14 +8,27 @@
  */
 
 // No direct access to this file
+use Joomla\CMS\Factory;
+
+JHtml::_('jquery.framework');
+JHtml::_('bootstrap.tooltip');
+JHtml::_('behavior.multiselect');
+JHtml::_('formbehavior.chosen', 'select');
+
 defined('_JEXEC') or die('Restricted access');
+
+$user = Factory::getUser();
+
 ?>
+
+<form action="<?php echo JRoute::_('index.php?option=com_beers&view=beers'); ?>" name="adminForm" id="adminForm" method="post">
 <table class="table table-striped">
     <thead>
         <tr>
             <th width="1%" class="center">
-                <input type="checkbox" name="checkall-toggle" value="" class="hasTooltip" title="" onclick="Joomla.checkAll(this)" data-original-title="Check All Items">
+                <?php echo JHtml::_('grid.checkall');?>
             </th>
+            <th>Status</th>
             <th>ID</th>
             <th>Name</th>
             <th>Tagline</th>
@@ -25,14 +38,25 @@ defined('_JEXEC') or die('Restricted access');
         </tr>
     </thead>
     <tbody>
-    <?php foreach($this->getBeers as $beer): ?>
+    <?php foreach($this->getBeers as $i => $beer):
+        $canEdit    = $user->authorise('core.edit','com_beers.beers.' . $beer['id']);
+        ?>
         <tr>
+
             <td class="center">
-                <input type="checkbox" id="cb0" name="cid[]" value="2" onclick="Joomla.isChecked(this.checked);">
+            <?php echo JHtml::_('grid.id', $i, $beer['id']); ?>
             </td>
 
+            <td><?php echo JHtml::_('jgrid.published', $beer->state, $i, 'beers.', $canChange, 'cb', $beer->publish_up, $beer->publish_down); ?></td>
+
             <td><?= $beer['id'] ?></td>
-            <td><?= $beer['name'] ?></td>
+            <td>
+                <?php if($canEdit):?>
+                    <a href="<?php echo JRoute::_('index.php?option=com_beers&task=beer.edit&id=' . (int) $beer['id']);?>"><?php echo $beer['name']?></a>
+                <?php else: ?>
+                    <?php echo $this->escape($beer['name']);?>
+                <?php endif; ?>
+            </td>
             <td><?= $beer['tagline'] ?></td>
             <td><?= $beer['description'] ?></td>
             <td><?= $beer['alcohol_percentage'] ?></td>
@@ -43,5 +67,11 @@ defined('_JEXEC') or die('Restricted access');
     </tbody>
 </table>
 
+<input type="hidden" name="task" value=""/>
+<input type="hidden" name="boxchecked" value=""/>
+<?php echo JHtml::_('form.token'); ?>
+</form>
 
-
+<script>
+    document.getElementById('adminForm').addEventListener('submit', function() { console.log(this); return false; } )
+</script>

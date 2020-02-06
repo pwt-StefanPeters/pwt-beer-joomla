@@ -14,7 +14,7 @@ defined('_JEXEC') or die('Restricted access');
  *
  * @since  0.0.6
  */
-class BeersTableBeers extends JTable
+class BeersTableBeer extends JTable
 {
 	/**
 	 * Constructor

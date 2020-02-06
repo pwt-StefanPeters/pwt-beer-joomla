@@ -12,7 +12,14 @@ use Joomla\CMS\Factory;
 
 defined('_JEXEC') or die('Restricted access');
 
-// Get an instance of the controller prefixed by Beers
-$controller = JControllerLegacy::getInstance('Beers');
-$controller->execute(Factory::getApplication()->input->get('task'));
-$controller->redirect();
+/**
+ * General Controller of Beers component
+ *
+ * @package     Joomla.Administrator
+ * @subpackage  com_beers
+ * @since       0.0.1
+ */
+class BeersControllerBeer extends JControllerForm
+{
+
+}

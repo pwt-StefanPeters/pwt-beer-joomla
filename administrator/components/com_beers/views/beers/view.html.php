@@ -33,19 +33,11 @@ class BeersViewBeers extends JViewLegacy
 
         // retrieve model
         $model = $this->getModel('Beers');
-//        $this->beers = $this->get('Beers');
-
-//        $this->controllerBier = $model->insertBeers();
-
-        // Calling helper function
-//        $this->retrieveBeers = BeersHelper::checkBeers();
 
         // alle biertjes ophalen
         $this->getBeers = $this->get('Beers');
-//        $this->getBeers = 'biertjes ophalen';
 
-
-        $this->beers = $model->checkBeers();
+//        $this->beers = $model->checkBeers();
 
         $this->createToolbar();
         // Display the view
@@ -56,8 +48,8 @@ class BeersViewBeers extends JViewLegacy
     {
         // all toolbar items
         JToolbarHelper::title('Beers');
-        JToolbarHelper::addNew('Beers.add', 'Biertjes opnieuw ophalen');
-        JToolbarHelper::editList('edit');
+        JToolbarHelper::addNew('beers.import', 'Biertjes opnieuw ophalen');
+        JToolbarHelper::editList('beers.edit');
 
     }
 }

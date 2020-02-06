@@ -8,6 +8,8 @@
  */
 
 // No direct access to this file
+use Joomla\CMS\Factory;
+
 defined('_JEXEC') or die('Restricted access');
 
 /**
@@ -26,10 +28,4 @@ class BeersController extends JControllerLegacy
      * @since 12.2
      */
     protected $default_view = 'beers';
-
-    public function test()
-    {
-        $this->get('Beers');
-        return 'test string uit de controller';
-    }
 }
