@@ -29,7 +29,7 @@ class BeersModelBeers extends ListModel
 
     public function import()
     {
-        $data  = $this->checkBeers();
+        $data  = BeersHelper::orderBeers();
         $model = \Joomla\CMS\MVC\Model\BaseDatabaseModel::getInstance('Beer', 'BeersModel', ['ignore_request' => true]);
 
 //        var_dump($model);

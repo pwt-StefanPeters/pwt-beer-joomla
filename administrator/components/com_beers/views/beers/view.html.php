@@ -58,6 +58,7 @@ class BeersViewBeers extends JViewLegacy
             {
                 JToolbarHelper::publish('beers.publish', 'JTOOLBAR_PUBLISH', true);
                 JToolbarHelper::unpublish('beers.unpublish', 'JTOOLBAR_UNPUBLISH', true);
+                JToolbarHelper::deleteList('Delete', 'beers.delete');
             }
 //        }
     }

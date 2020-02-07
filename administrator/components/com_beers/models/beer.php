@@ -1,5 +1,6 @@
 <?php
 
+use Joomla\CMS\Factory;
 use Joomla\CMS\MVC\Model\AdminModel;
 use Joomla\CMS\Table\Table;
 
@@ -79,12 +80,16 @@ class BeersModelBeer extends AdminModel
 
     public function save($array)
     {
-
-        var_dump($array);
-        die();
         if(isset($array['id']))
         {
-
+			try
+			{
+				$obj = (object) ['id' => $array['id']];
+				Factory::getDbo()->insertObject('#__beers', $obj, ['id']);
+			}
+			catch (Exception $e)
+			{
+			}
         }
 
         parent::save($array);
