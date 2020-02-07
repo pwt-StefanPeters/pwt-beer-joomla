@@ -1,6 +1,7 @@
 <?php
 
 use Joomla\CMS\Factory;
+use Joomla\CMS\MVC\Model\ListModel;
 
 defined('_JEXEC') or die('Restricted access');
 
@@ -9,7 +10,9 @@ JLoader::register('BeersHelper', JPATH_ADMINISTRATOR . '/components/com_beers/he
 //Beershelper::function();
 
 
-class BeersModelBeers extends \Joomla\CMS\MVC\Model\ListModel
+class BeersModelBeers extends ListModel
+//class BeersModelBeers extends JModelAdmin
+//class BeersModelBeers extends JModelList
 {
     protected function _getListQuery()
     {
@@ -26,12 +29,14 @@ class BeersModelBeers extends \Joomla\CMS\MVC\Model\ListModel
 
     public function import()
     {
-        $data  = BeersHelper::retrieveBeers();
+        $data  = $this->checkBeers();
         $model = \Joomla\CMS\MVC\Model\BaseDatabaseModel::getInstance('Beer', 'BeersModel', ['ignore_request' => true]);
+
+//        var_dump($model);
+//        die();
 
         foreach ($data as $beer)
         {
-            // todo: add back check for the same name
             $model->save((array) $beer);
         }
     }
@@ -45,7 +50,7 @@ class BeersModelBeers extends \Joomla\CMS\MVC\Model\ListModel
      * @param string $alcohol_percentage Alcohol percentage of beer
      *
      * */
-    public function insertBeers($name, $tagline, $description, $alcohol_percentage)
+    public function insertBeers($name, $tagline, $description, $abv)
     {
         $db = Factory::getDbo();
         $query = $db->getQuery(true);
@@ -54,7 +59,7 @@ class BeersModelBeers extends \Joomla\CMS\MVC\Model\ListModel
             'name',
             'tagline',
             'description',
-            'alcohol_percentage',
+            'abv',
             'rating'
         ];
 
@@ -62,7 +67,7 @@ class BeersModelBeers extends \Joomla\CMS\MVC\Model\ListModel
             $db->quote($name),
             $db->quote($tagline),
             $db->quote($description),
-            $db->quote($alcohol_percentage),
+            $db->quote($abv),
             $db->quote(0)
         ];
 
@@ -93,7 +98,7 @@ class BeersModelBeers extends \Joomla\CMS\MVC\Model\ListModel
             'name',
             'tagline',
             'description',
-            'alcohol_percentage',
+            'abv',
             'rating'
         ]);
 
@@ -143,7 +148,7 @@ class BeersModelBeers extends \Joomla\CMS\MVC\Model\ListModel
         {
             if($this->getBeersName($beer['name']) == null || empty($this->getBeersName($beer['name'])))
             {
-                $this->insertBeers($beer['name'], $beer['tagline'], $beer['description'], $beer['alcohol_percentage']);
+                $this->insertBeers($beer['name'], $beer['tagline'], $beer['description'], $beer['abv']);
             }
         }
     }

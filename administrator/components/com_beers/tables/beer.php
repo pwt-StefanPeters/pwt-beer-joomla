@@ -24,5 +24,6 @@ class BeersTableBeer extends JTable
 	function __construct(&$db)
 	{
 		parent::__construct('#__beers', 'id', $db);
+		$this->setColumnAlias('published', 'state');
 	}
 }

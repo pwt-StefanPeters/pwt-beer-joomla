@@ -63,7 +63,7 @@ class BeersHelper extends JHelperContent
                     'name' => $beer->name,
                     'tagline' => $beer->tagline,
                     'description' => $beer->description,
-                    'alcohol_percentage' => $beer->abv,
+                    'abv' => $beer->abv,
                 ];
         }
 

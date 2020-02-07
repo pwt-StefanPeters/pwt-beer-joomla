@@ -29,17 +29,16 @@ class BeersViewBeers extends JViewLegacy
      */
     public function display($tpl = null)
     {
-        // Assign data to the view
-
         // retrieve model
         $model = $this->getModel('Beers');
 
         // alle biertjes ophalen
-        $this->getBeers = $this->get('Beers');
+        $this->getBeers = $this->get('Items');
+        $this->state        = $this->get('State');
 
-//        $this->beers = $model->checkBeers();
-
+        // creating the toolbar
         $this->createToolbar();
+
         // Display the view
         parent::display($tpl);
     }
@@ -51,5 +50,15 @@ class BeersViewBeers extends JViewLegacy
         JToolbarHelper::addNew('beers.import', 'Biertjes opnieuw ophalen');
         JToolbarHelper::editList('beers.edit');
 
+//        $canDo = JHelperContent::getActions('com_banners', 'category', $this->state->get('filter.category_id'));
+
+//        if ($canDo->get('core.edit.state'))
+//        {
+            if ($this->state->get('filter.published') != 2)
+            {
+                JToolbarHelper::publish('beers.publish', 'JTOOLBAR_PUBLISH', true);
+                JToolbarHelper::unpublish('beers.unpublish', 'JTOOLBAR_UNPUBLISH', true);
+            }
+//        }
     }
 }

@@ -18,6 +18,10 @@ JHtml::_('formbehavior.chosen', 'select');
 defined('_JEXEC') or die('Restricted access');
 
 $user = Factory::getUser();
+$userId    = $user->get('id');
+$listOrder = $this->escape($this->state->get('list.ordering'));
+$listDirn  = $this->escape($this->state->get('list.direction'));
+
 
 ?>
 
@@ -39,28 +43,30 @@ $user = Factory::getUser();
     </thead>
     <tbody>
     <?php foreach($this->getBeers as $i => $beer):
-        $canEdit    = $user->authorise('core.edit','com_beers.beers.' . $beer['id']);
+        $canEdit    = $user->authorise('core.edit','com_beers.beers' . $beer->id);
+//        $canCheckin = $user->authorise('core.manage',     'com_checkin');
+//        $canChange  = $user->authorise('core.edit.state', 'com_beers' . $beer->id);
         ?>
         <tr>
 
             <td class="center">
-            <?php echo JHtml::_('grid.id', $i, $beer['id']); ?>
+            <?php echo JHtml::_('grid.id', $i, $beer->id); ?>
             </td>
 
-            <td><?php echo JHtml::_('jgrid.published', $beer->state, $i, 'beers.', $canChange, 'cb', $beer->publish_up, $beer->publish_down); ?></td>
+            <td><?php echo JHtml::_('jgrid.published', $beer->state, $i, 'beers.test');?></td>
 
-            <td><?= $beer['id'] ?></td>
+            <td><?= $beer->id ?></td>
             <td>
                 <?php if($canEdit):?>
-                    <a href="<?php echo JRoute::_('index.php?option=com_beers&task=beer.edit&id=' . (int) $beer['id']);?>"><?php echo $beer['name']?></a>
+                    <a href="<?php echo JRoute::_('index.php?option=com_beers&task=beer.edit&id=' . (int) $beer->id);?>"><?php echo $beer->name?></a>
                 <?php else: ?>
-                    <?php echo $this->escape($beer['name']);?>
+                    <?php echo $this->escape($beer->name);?>
                 <?php endif; ?>
             </td>
-            <td><?= $beer['tagline'] ?></td>
-            <td><?= $beer['description'] ?></td>
-            <td><?= $beer['alcohol_percentage'] ?></td>
-            <td><?= $beer['rating'] ?></td>
+            <td><?= $beer->tagline ?></td>
+            <td><?= $beer->description ?></td>
+            <td><?= $beer->abv ?></td>
+            <td><?= $beer->rating ?></td>
         </tr>
     <?php endforeach;?>
 
@@ -71,7 +77,3 @@ $user = Factory::getUser();
 <input type="hidden" name="boxchecked" value=""/>
 <?php echo JHtml::_('form.token'); ?>
 </form>
-
-<script>
-    document.getElementById('adminForm').addEventListener('submit', function() { console.log(this); return false; } )
-</script>

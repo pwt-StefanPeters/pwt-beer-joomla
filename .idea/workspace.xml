@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c11c5b08-1ec8-4652-9e55-4d11b7e5ed18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/beers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/beers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/install.mysql.utf8.sql" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/sql/install.mysql.utf8.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/sql/updates/mysql/0.0.11.sql" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/sql/updates/mysql/0.0.11.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/controllers/beers.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/controllers/beers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/helpers/beers.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/helpers/beers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/language/en-GB/en-GB.com_beers.ini" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/language/en-GB/en-GB.com_beers.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/models/beer.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/models/beer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/models/beers.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/models/beers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/models/forms/beer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/models/forms/beer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/tables/beer.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/tables/beer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/tmpl/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/tmpl/default.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/view.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/components/com_beers/views/beers/view.html.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +47,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="1XI6nK9Tq8wbXfSlnGpNUksdrqj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -83,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580721426573</updated>
       <workItem from="1580721427944" duration="35640000" />
-      <workItem from="1580893321595" duration="44310000" />
+      <workItem from="1580893321595" duration="56237000" />
     </task>
     <servers />
   </component>
@@ -91,11 +96,16 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2350" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580993424404">
-      <screen x="1680" y="23" width="2560" height="1417" />
+    <state x="440" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581069895752">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="440" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581069895752" />
     <state x="440" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.955@0.23.1680.955" timestamp="1580816742451" />
     <state x="2350" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1580993424404" />
+    <state x="2770" y="423" key="#com.intellij.ide.util.MemberChooser" timestamp="1581004669752">
+      <screen x="1680" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2770" y="423" key="#com.intellij.ide.util.MemberChooser/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1581004669752" />
     <state x="2698" y="493" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1580996518458">
       <screen x="1680" y="23" width="2560" height="1417" />
     </state>
@@ -104,6 +114,14 @@
       <screen x="1680" y="23" width="2560" height="1417" />
     </state>
     <state x="2712" y="594" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1580981752658" />
+    <state x="2233" y="359" key="FileDocumentManager.FileCacheConflict" timestamp="1581002711362">
+      <screen x="1680" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2233" y="359" key="FileDocumentManager.FileCacheConflict/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1581002711362" />
+    <state x="2572" y="555" key="NewPhpClassDialog" timestamp="1581004521735">
+      <screen x="1680" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2572" y="555" key="NewPhpClassDialog/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1581004521735" />
     <state x="658" y="455" key="NewPhpFileDialog" timestamp="1580733634703">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -112,11 +130,12 @@
       <screen x="1680" y="23" width="2560" height="1417" />
     </state>
     <state x="2469" y="370" key="SettingsEditor/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1580830315104" />
-    <state x="3159" y="338" width="1041" height="722" key="find.popup" timestamp="1581000914458">
-      <screen x="1680" y="23" width="2560" height="1417" />
+    <state x="971" y="233" width="684" height="536" key="find.popup" timestamp="1581069829994">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="971" y="233" width="684" height="536" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1581069829994" />
     <state x="498" y="257" width="683" height="486" key="find.popup/0.23.1680.955@0.23.1680.955" timestamp="1580810103964" />
-    <state x="3159" y="338" width="1041" height="722" key="find.popup/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1581000914458" />
+    <state x="3159" y="338" width="1041" height="722" key="find.popup/1680.23.2560.1417/0.23.1680.955@1680.23.2560.1417" timestamp="1581065919262" />
     <state x="2722" y="368" key="refactoring.ChangeSignatureDialog" timestamp="1580992329324">
       <screen x="1680" y="23" width="2560" height="1417" />
     </state>

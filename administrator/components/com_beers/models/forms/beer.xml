@@ -43,6 +43,17 @@
                 required="true"
         />
 
+        <field
+                name="abv"
+                type="text"
+                label="COM_BEERS_FIELD_NAME_LABEL"
+                description="COM_BEERS_FIELD_NAME_DESC"
+                class="input-xxlarge input-large-text"
+                size="40"
+                required="true"
+        />
+
+
     </fieldset>
 
 </form>

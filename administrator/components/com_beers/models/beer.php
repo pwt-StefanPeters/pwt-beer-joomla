@@ -76,4 +76,17 @@ class BeersModelBeer extends AdminModel
 
         return $data;
     }
+
+    public function save($array)
+    {
+
+        var_dump($array);
+        die();
+        if(isset($array['id']))
+        {
+
+        }
+
+        parent::save($array);
+    }
 }

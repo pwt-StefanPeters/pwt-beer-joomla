@@ -50,7 +50,7 @@ class BeersControllerBeers extends JControllerAdmin
      *
      * @since   1.6
      */
-    public function getModel($name = 'Beers', $prefix = 'BeersModel', $config = array('ignore_request' => true))
+    public function getModel($name = 'Beer', $prefix = 'BeersModel', $config = array('ignore_request' => true))
     {
         \Joomla\CMS\MVC\Model\BaseDatabaseModel::addIncludePath('/administrator/components/com_beers/models');
 
@@ -60,11 +60,63 @@ class BeersControllerBeers extends JControllerAdmin
     public function import()
     {
         /** @var BeersModelBeers $model */
-        $model = $this->getModel();
+        $model = $this->getModel('Beers');
         $model->import();
 
-        \Joomla\CMS\Factory::getApplication()->enqueueMessage('Successfully imported');
+        \Joomla\CMS\Factory::getApplication()->enqueueMessage('Successfully imported beers');
         \Joomla\CMS\Factory::getApplication()->redirect('index.php?option=com_beers&view=beers');
-
     }
+
+//    public function publish($cid)
+//    {
+//        if ($cid)
+//        {
+//            $client = $this->getClient();
+//
+//            $params = JComponentHelper::getParams('com_languages');
+//            $params->set($client->name, $cid);
+//
+//            $table = JTable::getInstance('extension');
+//            $id    = $table->find(array('element' => 'com_languages'));
+//
+//            // Load.
+//            if (!$table->load($id))
+//            {
+//                $this->setError($table->getError());
+//
+//                return false;
+//            }
+//
+//            $table->params = (string) $params;
+//
+//            // Pre-save checks.
+//            if (!$table->check())
+//            {
+//                $this->setError($table->getError());
+//
+//                return false;
+//            }
+//
+//            // Save the changes.
+//            if (!$table->store())
+//            {
+//                $this->setError($table->getError());
+//
+//                return false;
+//            }
+//        }
+//        else
+//        {
+//            $this->setError(JText::_('COM_LANGUAGES_ERR_NO_LANGUAGE_SELECTED'));
+//
+//            return false;
+//        }
+//
+//        // Clean the cache of com_languages and component cache.
+//        $this->cleanCache();
+//        $this->cleanCache('_system', 0);
+//        $this->cleanCache('_system', 1);
+//
+//        return true;
+//    }
 }
