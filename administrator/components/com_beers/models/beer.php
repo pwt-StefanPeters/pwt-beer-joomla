@@ -6,19 +6,14 @@ use Joomla\CMS\Table\Table;
 
 defined('_JEXEC') or die('Restricted access');
 
-// Onderstaande regel gebruiken om Helper aan te roepen, 2e regel gebruiken om static function op te halen uit Helper
-//JLoader::register('BeersHelper', JPATH_ADMINISTRATOR . '/components/com_beers/helpers/beers.php');
-//Beershelper::function();
-
-
 class BeersModelBeer extends AdminModel
 {
     /**
      * Method to get a table object, load it if necessary.
      *
-     * @param   string  $type    The table name. Optional.
-     * @param   string  $prefix  The class prefix. Optional.
-     * @param   array   $config  Configuration array for model. Optional.
+     * @param string $type The table name. Optional.
+     * @param string $prefix The class prefix. Optional.
+     * @param array $config Configuration array for model. Optional.
      *
      * @return  JTable  A JTable object
      *
@@ -35,8 +30,8 @@ class BeersModelBeer extends AdminModel
     /**
      * Method to get the record form.
      *
-     * @param   array    $data      Data for the form. [optional]
-     * @param   boolean  $loadData  True if the form is to load its own data (default case), false if not. [optional]
+     * @param array $data Data for the form. [optional]
+     * @param boolean $loadData True if the form is to load its own data (default case), false if not. [optional]
      *
      * @return  JForm|boolean  A JForm object on success, false on failure
      *
@@ -47,8 +42,7 @@ class BeersModelBeer extends AdminModel
         // Get the form.
         $form = $this->loadForm('com_beers.beer', 'beer', array('control' => 'jform', 'load_data' => $loadData));
 
-        if (empty($form))
-        {
+        if (empty($form)) {
             return false;
         }
 
@@ -65,11 +59,10 @@ class BeersModelBeer extends AdminModel
     protected function loadFormData()
     {
         // Check the session for previously entered form data.
-        $app  = JFactory::getApplication();
+        $app = JFactory::getApplication();
         $data = $app->getUserState('com_beers.edit.beer.data', array());
 
-        if (empty($data))
-        {
+        if (empty($data)) {
             $data = $this->getItem();
         }
 
@@ -80,16 +73,14 @@ class BeersModelBeer extends AdminModel
 
     public function save($array)
     {
-        if(isset($array['id']))
-        {
-			try
-			{
-				$obj = (object) ['id' => $array['id']];
-				Factory::getDbo()->insertObject('#__beers', $obj, ['id']);
-			}
-			catch (Exception $e)
-			{
-			}
+        if (isset($array['id'])) {
+            try {
+                // Insert row with PK if not found
+                $obj = (object)['id' => $array['id']];
+                Factory::getDbo()->insertObject('#__beers', $obj, ['id']);
+            } catch (Exception $e) {
+                // Exception thrown when PK ID is found and no row can be inserten with the same ID
+            }
         }
 
         parent::save($array);

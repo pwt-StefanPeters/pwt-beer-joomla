@@ -1,5 +1,7 @@
 <?php
 
+use Joomla\CMS\Language\Text;
+
 defined('_JEXEC') or die('Restricted access');
 
 JHtml::_('jquery.framework');
@@ -23,13 +25,9 @@ JFactory::getDocument()->addScriptDeclaration('
 
     <?php echo JHtml::_('bootstrap.startTabSet', 'myTab', array('active' => 'details')); ?>
 
-    <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'details', JText::_('COM_BEERS_BANNER_DETAILS')); ?>
-        <?php echo $this->form->renderFieldset('details'); ?>
-    <?php echo JHtml::_('bootstrap.endTab'); ?>
-
-    <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'extra', JText::_('COM_BEERS_BANNER_EXTRA')); ?>
-        <?php echo $this->form->renderFieldset('extra'); ?>
-    <?php echo JHtml::_('bootstrap.endTab'); ?>
+        <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'details', Text::_('COM_BEERS_BANNER_DETAILS')); ?>
+            <?php echo $this->form->renderFieldset('details'); ?>
+        <?php echo JHtml::_('bootstrap.endTab'); ?>
 
     <?php echo JHtml::_('bootstrap.endTabSet'); ?>
 

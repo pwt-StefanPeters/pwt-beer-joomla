@@ -12,7 +12,6 @@ defined('_JEXEC') or die('Restricted access');
 JLoader::register('BeersHelper', JPATH_ADMINISTRATOR . '/components/com_beers/helpers/beers.php');
 
 
-
 /**
  * HTML View class for the Beer Component
  *
@@ -23,7 +22,7 @@ class BeersViewBeers extends JViewLegacy
     /**
      * Display the Hello World view
      *
-     * @param   string  $tpl  The name of the template file to parse; automatically searches through the template paths.
+     * @param string $tpl The name of the template file to parse; automatically searches through the template paths.
      *
      * @return  void
      */
@@ -34,7 +33,7 @@ class BeersViewBeers extends JViewLegacy
 
         // alle biertjes ophalen
         $this->getBeers = $this->get('Items');
-        $this->state        = $this->get('State');
+        $this->state = $this->get('State');
 
         // creating the toolbar
         $this->createToolbar();
@@ -50,16 +49,11 @@ class BeersViewBeers extends JViewLegacy
         JToolbarHelper::addNew('beers.import', 'Biertjes opnieuw ophalen');
         JToolbarHelper::editList('beers.edit');
 
-//        $canDo = JHelperContent::getActions('com_banners', 'category', $this->state->get('filter.category_id'));
 
-//        if ($canDo->get('core.edit.state'))
-//        {
-            if ($this->state->get('filter.published') != 2)
-            {
-                JToolbarHelper::publish('beers.publish', 'JTOOLBAR_PUBLISH', true);
-                JToolbarHelper::unpublish('beers.unpublish', 'JTOOLBAR_UNPUBLISH', true);
-                JToolbarHelper::deleteList('Delete', 'beers.delete');
-            }
-//        }
+        if ($this->state->get('filter.published') != 2) {
+            JToolbarHelper::publish('beers.publish', 'JTOOLBAR_PUBLISH', true);
+            JToolbarHelper::unpublish('beers.unpublish', 'JTOOLBAR_UNPUBLISH', true);
+            JToolbarHelper::deleteList('Delete', 'beers.delete');
+        }
     }
 }

@@ -12,7 +12,7 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $debug_lang_const = '1';
-	public $dbtype = 'pdomysql';
+	public $dbtype = 'mysqli';
 	public $host = 'localhost';
 	public $user = 'root';
 	public $password = 'root';
